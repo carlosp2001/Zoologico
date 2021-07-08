@@ -18,7 +18,7 @@ namespace Zoologico
         {
             
             base.QueClaseDeAnimalEres();
-            return "Soy un mamifero llamado: " + Nombre + "\n de la especie: "+Especie + "\n Peso en Kg: " + (Peso.ToString()) + "\n Estoy en la jaula: " + (Jaula.ToString());
+            return "Soy un mamifero llamado: " + Nombre + "\nde la especie: "+Especie + "\nPeso en Kg: " + (Peso.ToString()) + "\nEstoy en la jaula: " + (Jaula.ToString());
             
         }
 

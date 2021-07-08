@@ -26,7 +26,7 @@ namespace Zoologico
         {
 
             base.QueClaseDeAnimalEres();
-            return "Soy un ave llamada: " + Nombre + "\n de la especie: " + Especie + "\n Peso en Kg: " + (Peso.ToString()) + "\n Estoy en la jaula: " + (Jaula.ToString() + "\n El color de mi plumaje es: " + ColorPlumaje + "\n Mi altura maxima de vuelo es: " + (AlturaMaximaVuelo.ToString()));
+            return "Soy un ave llamada: " + Nombre + "\nde la especie: " + Especie + "\nPeso en Kg: " + (Peso.ToString()) + "\nEstoy en la jaula: " + (Jaula.ToString() + "\nEl color de mi plumaje es: " + ColorPlumaje + "\nMi altura maxima de vuelo es: " + (AlturaMaximaVuelo.ToString()));
 
         }
     }

@@ -30,7 +30,7 @@ namespace Zoologico
                 vuelo = "No";
             }
             
-            return "Soy un insecto llamado: " + Nombre + "\n de la especie: " + Especie + "\n Peso en Kg: " + (Peso.ToString()) + "\n Estoy en la jaula: " + (Jaula.ToString() + "\nVuelo: " + vuelo);
+            return "Soy un insecto llamado: " + Nombre + "\nde la especie: " + Especie + "\nPeso en Kg: " + (Peso.ToString()) + "\nEstoy en la jaula: " + (Jaula.ToString() + "\nVuelo: " + vuelo);
 
         }
     }

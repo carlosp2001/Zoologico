@@ -27,27 +27,29 @@ namespace Zoologico
             String nombre = textBox1.Text;
 
             String especie;
+            especie = textBox5.Text;
             double peso =Double.Parse(textBox2.Text);
             int jaula = Convert.ToInt32(numericUpDown1.Value);
             String plumaje = textBox3.Text;
-            
-            
+            double alturamaxima;
+
+
             if (comboBox1.SelectedIndex == 0)
             {
-                especie = "Mamifero";
+               
                 Cls_mamifero mamifero = new Cls_mamifero(especie, nombre, peso, jaula);
                 label7.Text = mamifero.QueClaseDeAnimalEres();
             }else if (comboBox1.SelectedIndex == 1)
             {
-                especie = "Ave";
-                double alturamaxima = Double.Parse(textBox4.Text);
+                
+                alturamaxima = Double.Parse(textBox4.Text);
                 cls_Ave ave = new cls_Ave(especie, nombre, peso, jaula, alturamaxima, plumaje);
                 label7.Text = ave.QueClaseDeAnimalEres();
             }
             else if (comboBox1.SelectedIndex == 2)
             {
                 Boolean volar = radioButton1.Checked;
-                especie = "Insecto";
+                
                 
                 cls_Insecto insecto = new cls_Insecto(especie, nombre, peso, jaula, volar);
                 label7.Text = insecto.QueClaseDeAnimalEres();
@@ -56,7 +58,7 @@ namespace Zoologico
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            label7.Text = " ";
+            label7.Text = "";
             
 
         }
